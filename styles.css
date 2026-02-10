@@ -261,6 +261,7 @@ body h1 {
 
 @media screen and (max-width: 900px) and (min-width: 375px) {
   .links-footer {
+    display: grid;
     grid-template-columns: 1fr;
   }
 }
@@ -276,6 +277,24 @@ body h1 {
   color: #25bca4;
 }
 
+@media screen and (max-width: 900px) and (min-width: 375px) {
+  .links-footer a {
+    margin-right: 0;
+  }
+}
+
 .social-media a {
   margin-right: 15px;
+}
+
+@media screen and (max-width: 900px) and (min-width: 375px) {
+  .social-media {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .social-media a {
+    margin-right: 0;
+  }
 }
